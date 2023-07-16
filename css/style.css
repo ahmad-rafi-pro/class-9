@@ -140,7 +140,7 @@ nav ul li a:hover{
 #about .iconbox-1:last-child {
     border-right-color: transparent;
 }
-#about .about_box p {
+#about .iconbox-1 p {
     font-size: 11px;
     line-height: 21px;
 }
@@ -217,10 +217,12 @@ nav ul li a:hover{
 #mywork .imagebox .hover h3 {
     font-size: 16px;
     line-height: 23px;
+    margin-top: 92px;
 }
 #mywork .imagebox .hover p {
     font-size: 13px;
     line-height: 21px;
+    margin: 14px 37px;
 }
 /*MyWork section css end*/
 
