@@ -1,0 +1,290 @@
+/*common css start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,a,button,strong{
+    font-weight: 800;
+}
+.sectionname{
+    font-size: 46px;
+    line-height: 90.12px;
+    color: #02918b;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.sectionname h2 {
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.sectionname p {
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 41px;
+}
+.sectionname p b {
+    font-size: 23px;
+}
+/*common css end*/
+
+/*Nav section css start*/
+nav{
+    background-color: #02918b;
+    width: 100%;
+    position: fixed;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 12px;
+    line-height: 60.12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0 26px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    background-color: #cfc91d;
+    color: #0b1016;
+}
+/*Nav section css end*/
+
+/*Banner section css start*/
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.66)), url(./../images/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+#banner .row{
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+#banner h4{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+}
+#banner h1{
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 75px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner p{
+    font-size: 18px;
+    line-height: 33px;
+}
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+#banner a{
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    color: #0b1016;
+    padding: 19px 42px;
+}
+#banner a:hover {
+    background-color: #02918b;
+    color: #ffffff;
+    transition: 0.4s;
+}
+/*Banner section css end*/
+
+/*About section css start*/
+#about{
+    padding: 98px 0;
+}
+#about .sectionname {
+    padding: 0 137px;
+    margin-bottom: 80px;
+}
+#about .iconbox-1 {
+    width: 25%;
+    padding: 36px 65px;
+    border-right: 1px solid #d9dbdb;
+    color: #7e8287;
+}
+#about .iconbox-1:last-child {
+    border-right-color: transparent;
+}
+#about .about_box p {
+    font-size: 11px;
+    line-height: 21px;
+}
+#about .iconbox-1 h3 {
+    margin: 23px 0;
+    font-size: 16px;
+    line-height: 23px;
+}
+/*About section css end*/
+
+/*Service section css start*/
+#services{
+    background-image: url(./../images/servicesbg.jpg);
+    padding:74px;
+    background-size: cover;
+    background-position: center;
+}
+#services .inner_container {
+    width: 50%;
+}
+#services .iconbox-2 {
+    width: 50%;
+    padding-right: 110px;
+    margin-bottom: 53px;
+    color: #7e8287;
+}
+#services .sectionname {
+    padding-right: 90px;
+    margin-bottom: 60px;
+}
+#services .iconbox-2 h3 {
+    margin: 16px 0;
+    font-size: 16px;
+    line-height: 23px;
+}
+#services .iconbox-2 p {
+    font-size: 11px;
+    line-height: 21px;
+}
+/*Service section css end*/
+
+/*MyWork section css start*/
+#mywork {
+    padding-top: 110px;
+}
+#mywork .sectionname {
+    padding: 0 236px;
+    margin-bottom: 78px;
+}
+#mywork .imagebox {
+    width: 25%;
+    position: relative;
+}
+#mywork .imagebox img {
+    width: 100%;
+    display: block;
+}
+#mywork .imagebox .hover {
+    position: absolute;
+    background-color: rgba(2, 145, 140, 0.85);
+    z-index: 99;
+    inset: 20px 28px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    transform: rotate(20deg) skew(20deg) scale(0);
+    transform-origin: left bottom;
+    transition: 0.5s;
+}
+#mywork .imagebox:hover .hover {
+    transform-origin: right bottom;
+    transform: rotate(0deg) skew(0deg) scale(1);
+}
+#mywork .imagebox .hover h3 {
+    font-size: 16px;
+    line-height: 23px;
+}
+#mywork .imagebox .hover p {
+    font-size: 13px;
+    line-height: 21px;
+}
+/*MyWork section css end*/
+
+/*Contact section css start*/
+#contact {
+    padding-top: 100px;
+}
+#contact .sectionname {
+    padding: 0 237px;
+    margin-bottom: 70px;
+}
+#contact .form {
+    background-color: #0b0b0b;
+    padding: 70px 0;
+}
+#contact .form input {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;
+    text-align: center;
+    padding: 18px;
+    border: none;
+    border-bottom: 1px solid #898989;
+    margin-bottom: 51px;
+    text-transform: uppercase;
+}
+#contact .form .smu {
+    width: 640px;
+}
+#contact .dorm .lgu {
+    width: 920px;
+}
+#contact .form button {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 19px 64px;
+    border: none;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+#contact .form button:hover {
+    background-color: #02918b;
+    color: #ffffff;
+    transition: 0.4s;
+}
+/*Contact section css end*/
+
+/*Footer section css start*/
+footer{
+    background-color: #000000;
+    color: #7e8287;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px;
+}
+/*Footer section css end*/
+
+
+
